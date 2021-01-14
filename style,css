@@ -1,0 +1,68 @@
+body {
+  text-align: center;
+  background: white;
+  position: relative;
+}
+
+
+.mobile span, .hamb {
+ display: none;
+}
+@media screen and (max-width: 593px){
+	.mobile{
+		width: 250px;
+		height: 100vh;
+		background: #333;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+		top: 0;
+		right: -250px;
+		padding: 15px;
+		font-size: 25px;
+		z-index: 2;
+		color: #fff;
+    }
+ }
+
+	.mobile a{
+		margin-bottom: 20px;
+	}
+	.mobile a:last-child{
+		margin-bottom: 0px;
+	}
+	.mobile span{
+		display: block;
+		position: absolute;
+		top: -5px;
+		right: 10px;
+		font-size: 40px;
+		transform: rotate(45deg);
+		color: #fff;
+	}
+	
+
+@media (max-width: 1366px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+@media (max-width: 375px) {
+  body {
+    font-size: 13px;
+  }
